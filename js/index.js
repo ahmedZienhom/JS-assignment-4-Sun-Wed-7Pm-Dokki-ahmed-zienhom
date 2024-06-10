@@ -58,9 +58,13 @@ function token(element) {
 if (window.location.href.slice(-11,-5) == `regist`) {
     
     regist.addEventListener(`click`, function(e) {
-        if(uName.value == `` || mail.value == `` || pw.value == ``) {
+        if(uName.value == ``) {
             uName.nextElementSibling.nextElementSibling.classList?.remove(`d-none`);
+        }
+        if( mail.value == `` ) {
             mail.nextElementSibling.nextElementSibling.classList?.remove(`d-none`);
+        }
+        if(pw.value == ``) {
             pw.nextElementSibling.nextElementSibling.classList?.remove(`d-none`);
         }
 
