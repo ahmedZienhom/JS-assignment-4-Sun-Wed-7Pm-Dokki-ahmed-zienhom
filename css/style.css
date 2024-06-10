@@ -9,6 +9,18 @@ h1 {
     background-color: inherit;
     color: #17a2b8;
 }
+.form-control::-webkit-input-placeholder {
+    color: #17a2b8;
+}
+.form-control::-moz-placeholder {
+    color: #17a2b8;
+}
+.form-control:-ms-input-placeholder {
+    color: #17a2b8;
+}
+.form-control::-ms-input-placeholder {
+    color: #17a2b8;
+}
 .form-control::placeholder,.form-control {
     color: #17a2b8;
 }
@@ -23,26 +35,60 @@ p a:hover {
     height: 75vh;
 }
 .animated {
-    animation: alerted 350ms ease-in-out ;
+    -webkit-animation: alerted 350ms ease-in-out ;
+            animation: alerted 350ms ease-in-out ;
+}
+
+@-webkit-keyframes alerted {
+    0% {
+        -webkit-transform: translate(30px);
+                transform: translate(30px);
+    }
+    20% {
+        -webkit-transform: translate(00px);
+                transform: translate(00px);
+    }
+    40% {
+        -webkit-transform: translate(-30px);
+                transform: translate(-30px);
+    }
+    60% {
+        -webkit-transform: translate(00px);
+                transform: translate(00px);
+    }
+    80% {
+        -webkit-transform: translate(30px);
+                transform: translate(30px);
+    }
+    100% {
+        -webkit-transform: translate(00px);
+                transform: translate(00px);
+    }
 }
 
 @keyframes alerted {
     0% {
-        transform: translate(30px);
+        -webkit-transform: translate(30px);
+                transform: translate(30px);
     }
     20% {
-        transform: translate(00px);
+        -webkit-transform: translate(00px);
+                transform: translate(00px);
     }
     40% {
-        transform: translate(-30px);
+        -webkit-transform: translate(-30px);
+                transform: translate(-30px);
     }
     60% {
-        transform: translate(00px);
+        -webkit-transform: translate(00px);
+                transform: translate(00px);
     }
     80% {
-        transform: translate(30px);
+        -webkit-transform: translate(30px);
+                transform: translate(30px);
     }
     100% {
-        transform: translate(00px);
+        -webkit-transform: translate(00px);
+                transform: translate(00px);
     }
 }

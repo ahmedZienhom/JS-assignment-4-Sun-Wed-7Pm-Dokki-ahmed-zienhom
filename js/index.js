@@ -118,10 +118,12 @@ login.addEventListener(`click`, function (e) {
 
         if(mail.value == `` || pw.value == ``) {
             login.nextElementSibling.classList.remove(`d-none`);
+            login.nextElementSibling.classList.toggle(`animated`);
             return
         }
         if(!isUser()) {
             login.nextElementSibling.nextElementSibling.classList.remove(`d-none`);
+            login.nextElementSibling.nextElementSibling.classList.toggle(`animated`);
             return
         }
     
