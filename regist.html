@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="my-5 container text-center">
+        <div class="p-5 shadow-lg w-75 m-auto">
+            <h1 class="text-capitalize ">smart sign up system</h1>
+            <input type="text" name="uName" class="form-control shadow-none my-3" placeholder="Enter Your Name"/>
+            <div class="alert info d-none text-primary p-1 text-capitalize">
+                <p class="m-0 p-0">the name must be at least 5 words</p>
+             </div>
+            <div class="alert d-none text-danger p-1 text-capitalize">
+               <p class="m-0 p-0">this input is required !!</p>
+            </div>
+            <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">invalid name :(</p>
+             </div> 
+            <div class="alert text-success d-none p-1 text-capitalize">
+                <p class="m-0 p-0">valid name :)</p>
+             </div> 
+             <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">this name is token !!</p>
+             </div>
+            <input type="email" name="mail"  class="form-control shadow-none my-3" placeholder="Enter Your E-mail" />
+            <div class="alert info d-none text-primary p-1 text-capitalize">
+                <p class="m-0 p-0">write full e-mail</p>
+             </div>
+            <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">this input is required !!</p>
+             </div>
+             <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">this e-mail is unvalid :(</p>
+             </div>
+             <div class="alert text-success d-none p-1 text-capitalize">
+                <p class="m-0 p-0">valid e-mail :)</p>
+             </div> 
+             <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">this e-mail is token !!</p>
+             </div>
+            <input type="password" name="pw" class="form-control shadow-none my-3" placeholder="Enter Your Password"/>
+            <div class="alert info d-none text-primary p-1 text-capitalize">
+                <p class="m-0 p-0">your password must be :</p>
+                <p class="m-0 p-0">2- between 8 characters and 15 characters</p>
+             </div>
+             <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">this input is required !!</p>
+             </div>
+            <div class="alert d-none text-danger p-1 text-capitalize">
+                <p class="m-0 p-0">unvalid password :(</p>
+             </div>
+             <div class="alert text-success d-none p-1 text-capitalize">
+                <p class="m-0 p-0">valid password :)</p>
+             </div> 
+            <button class="w-100 btn btn-outline-info my-3 text-capitalize" id="regist">sign up</button>
+            <div class="alert text-info p-1 d-none">
+                <p class="m-0 h1">succsess go to <a href="index.html">sign in.</a></p>
+            </div>
+            <p class="text-capitalize text-white">You have an account? <a href="index.html">sign in.</a></p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

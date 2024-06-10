@@ -1,0 +1,48 @@
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1 {
+    color: #17a2b8;
+}
+.form-control:focus, .form-control {
+    background-color: inherit;
+    color: #17a2b8;
+}
+.form-control::placeholder,.form-control {
+    color: #17a2b8;
+}
+p a ,button a {
+    text-decoration: none;
+    color: inherit;
+}
+p a:hover {
+    text-decoration: underline;
+}
+#inBody {
+    height: 75vh;
+}
+.animated {
+    animation: alerted 350ms ease-in-out ;
+}
+
+@keyframes alerted {
+    0% {
+        transform: translate(30px);
+    }
+    20% {
+        transform: translate(00px);
+    }
+    40% {
+        transform: translate(-30px);
+    }
+    60% {
+        transform: translate(00px);
+    }
+    80% {
+        transform: translate(30px);
+    }
+    100% {
+        transform: translate(00px);
+    }
+}
